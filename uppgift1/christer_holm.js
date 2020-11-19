@@ -27,7 +27,11 @@ let books = [];
 books.push(new Book("Guldkompassen", "Fantasy", 459, "978-91-27-09981-4"));
 books.push(new Book("Den Skarpa Eggen", "Fantasy", 589, "978-91-27-09980-7"));
 books.push(new Book("Bärnstenskikaren", "Fantasy", 672, "978-91-27-11601-6"));
-{
+
+
+let nrMedBocker = prompt("Hur många böcker vill du lägg till?", "1,2,3...");
+for (let i = 1; i <= nrMedBocker; i++) {
+
   let laggTillBok = prompt("Titel: ");
   let laggTillGener = prompt("Gener: ");
   let laggTillSidor = prompt("Antal sidor: ");
